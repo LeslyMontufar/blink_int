@@ -11,22 +11,30 @@
 #include "app.h"
 #include "hw.h"
 
+volatile uint32_t delay = 100;
+
+void app_button_interrupt(void){
+	if(delay == 100)
+		delay = 400;
+	else
+		delay = 100;
+}
+
+void app_tick_1ms(void){
+	static uint32_t delay_cnt = 0;
+	delay_cnt++;
+
+	if(delay_cnt >= delay){
+		delay_cnt = 0;
+		hw_led_toggle();
+	}
+
+}
+
 void app_init(void){
 
 }
 
 void app_loop(void){
-	uint32_t delay;
-	bool button_state = hw_button_state_get();
-
-	if(button_state)
-		delay = 2000;
-	else
-		delay = 500;
-
-	hw_led_state_set(true);
-	hw_delay_ms(delay);
-	hw_led_state_set(false);
-	hw_delay_ms(delay);
-
+	hw_cpu_sleep();
 }
