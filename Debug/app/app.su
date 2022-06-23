@@ -1,4 +1,0 @@
-../app/app.c:16:6:app_button_interrupt	4	static
-../app/app.c:23:6:app_tick_1ms	8	static
-../app/app.c:34:6:app_init	4	static
-../app/app.c:38:6:app_loop	8	static

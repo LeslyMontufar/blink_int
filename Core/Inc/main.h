@@ -62,6 +62,9 @@ void Error_Handler(void);
 #define BUTTON_Pin GPIO_PIN_0
 #define BUTTON_GPIO_Port GPIOA
 #define BUTTON_EXTI_IRQn EXTI0_IRQn
+#define BUTTON1_Pin GPIO_PIN_1
+#define BUTTON1_GPIO_Port GPIOA
+#define BUTTON1_EXTI_IRQn EXTI1_IRQn
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
