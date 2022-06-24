@@ -2,7 +2,7 @@
 
 Autora: Lesly Montúfar
 
-Código blink com botão parar mudar frequência em que o led pisca, para STM32 utilizando interrupções.
+Código blink com duas entradas (botões) parar mudar frequência em que o led pisca, no microcontrolador STM32, utilizando interrupções.
 
 ## Índice 
 
