@@ -1,0 +1,5 @@
+../app/app.c:27:6:app_delay_toggle	4	static
+../app/app.c:31:6:app_button_interrupt	16	static
+../app/app.c:45:6:app_tick_1ms	8	static
+../app/app.c:61:6:app_init	8	static
+../app/app.c:66:6:app_loop	8	static

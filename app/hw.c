@@ -38,7 +38,7 @@ void hw_led_toggle(void){
 }
 
 void hw_led_state_set(bool state){
-	GPIO_PinState led_state = state ? GPIO_PIN_SET : GPIO_PIN_RESET;
+	GPIO_PinState led_state = state ? GPIO_PIN_RESET : GPIO_PIN_SET;
 	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, led_state);
 }
 
