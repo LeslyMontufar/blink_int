@@ -17,7 +17,7 @@ Usando a STM32CubeIDE:
 3. Pode-se fazer chamadas das funções do HAL e CSIS, para isso a suas funções podem ser abstraídas para a camada hw (de hardware, em `hw.c` e `hw.h`) para facilitar a leitura do código.
 4. O desenvolvimento da aplicação deve estar numa pasta da aplicação `app`.
 5. Os requisitos da aplicação serão cumpridos em `app.c` e `app.h`. 
-6. As duas entradas, `PA0` e `PA1` obterão as seguintes possíveis saídas `S`, que são os delays ON/OFF do led:
+6. As duas entradas, `PA0` e `PA1` obterão as seguintes possíveis saídas `S`, que são os delays ON/OFF do led em milissegundos:
 
 | PA0 | PA1 | LED ON/OFF |
 |:----------:|:----------:|:-------------:|
